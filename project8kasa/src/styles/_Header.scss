@@ -1,0 +1,19 @@
+@import "Variables";
+
+header {
+    text-align: end;
+    padding-top: 20px;
+    img {
+        display:flex;
+    }
+    a {
+        position: relative;
+        bottom: 35px;
+        padding: 20px;
+        color: $maincolor;
+        text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    }
+}
