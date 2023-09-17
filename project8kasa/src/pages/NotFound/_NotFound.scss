@@ -1,10 +1,9 @@
 .notfound {
     text-align: center;
     color:$maincolor;
-    min-height: 78.9vh;
     p {
         font-size: 36px;
-        padding: 70px 0px;
+        padding: 109px 0px;
     }
     a {
         font-size: 18px;
@@ -18,4 +17,39 @@
         margin: 0;
         padding: 120px 0px 0px 0px;
     }
-}   
+}
+
+@media (max-width: 930px) {
+    .notfound {
+        p {
+            font-size: 25px;
+        }
+    }
+}    
+
+@media (max-width: 640px) { 
+    .notfound {
+        h2 {
+            font-size:150px;
+        }
+        p {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .notfound {
+        h2 {
+            font-size:96px;
+            padding: 197px 0px 0px 0px;
+        }
+        p {
+            font-size: 18px;
+            padding: 114px 0px;
+        }
+        a {
+            font-size: 14px;
+        }
+    }
+}

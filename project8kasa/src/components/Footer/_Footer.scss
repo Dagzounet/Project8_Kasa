@@ -8,3 +8,17 @@ footer {
         padding: 10px;
     }
 }
+
+@media (max-width: 360px) { 
+    footer {
+        padding-bottom: 20px;
+        img {
+            width: 50%;
+        }
+        p {
+            font-size: 12px;
+            width: 40%;
+            padding-left: 93px;
+        }
+    }
+}

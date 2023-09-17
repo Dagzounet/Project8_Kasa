@@ -17,3 +17,28 @@ header {
     }
     }
 }
+
+@media (max-width: 580px) { 
+    header {
+        padding-bottom: 0px;
+        img {
+            width: 145px;
+        }
+        a {
+            font-size: 15px;
+            padding-left: 12px;
+            padding-right: 0px;
+        }
+    }
+}
+
+@media (max-width: 360px) { 
+    header {
+        img {
+            width: 48%;
+        }
+        a {
+            font-size: 12px;
+        }
+    }
+}

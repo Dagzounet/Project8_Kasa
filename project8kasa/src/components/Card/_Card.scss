@@ -42,3 +42,56 @@
         width: 50%;
     }
 }
+
+@media (max-width: 825px) { 
+    .banner {
+        height: 111px;
+        img {
+            height: 111px;
+        }
+        p {
+            font-size: 24px;
+            bottom: 98px;
+            text-align: center;
+        }
+    }
+    .gallery {
+        figure {
+            width: calc(49.33% - 54px);
+        }
+    }
+}
+
+@media (max-width: 580px) { 
+    .banner {
+        p {
+            font-size: 24px;
+            text-align: start;
+            padding-left: 17px;
+            width: calc(89.33% - 2px);
+        }
+    }
+    .gallery {
+        figure {
+            width: calc(93.33% - 54px);
+        }
+    }
+}
+
+@media (max-width: 360px) { 
+    .gallery {
+        margin:0px;
+        background-color: white;
+        figure {
+            width: calc(100% - 0px);
+            margin-left: 0px;
+            margin-top: 8px;
+        }
+    }
+    .banner {
+        p {
+            bottom: 116px;
+
+        }
+    }
+}
