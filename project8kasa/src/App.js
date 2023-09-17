@@ -3,11 +3,7 @@ import Routeur from "./components/Routeur/Routeur";
 import "./styles/main.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Routeur />
-    </div>
-  );
+  return <Routeur />;
 }
 
 export default App;

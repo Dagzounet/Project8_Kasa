@@ -1,9 +1,12 @@
 import React from "react";
+import Banner from "../../components/Banner/Banner";
+import Card from "../../components/Card/Card";
 
 function Home() {
   return (
-    <div>
-      <h2>Page d'accueil</h2>
+    <div className="home">
+      <Banner />
+      <Card />
     </div>
   );
 }

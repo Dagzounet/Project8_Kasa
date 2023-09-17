@@ -1,0 +1,16 @@
+.banner {
+    height: 223px;
+    img {
+        width:100%;
+        border-radius:25px;
+        filter: brightness(70%);
+        height: 223px;
+    }
+    p {
+        position: relative;
+        text-align: center;
+        bottom:186px;
+        color: white;
+        font-size: 48px;
+    }
+}
