@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .app-container {
   padding: 0px 20px;
 }
@@ -89,9 +90,32 @@ header a:hover {
   left: 14px;
   color: white;
   font-size: 18px;
+  width: 50%;
+}
+
+.notfound {
+  text-align: center;
+  color: #FF6060;
+  min-height: 78.9vh;
+}
+.notfound p {
+  font-size: 36px;
+  padding: 70px 0px;
+}
+.notfound a {
+  font-size: 18px;
+}
+.notfound a:visited {
+  color: #FF6060;
+}
+.notfound h2 {
+  font-size: 288px;
+  font-weight: 700;
+  margin: 0;
+  padding: 120px 0px 0px 0px;
 }
 
 .App {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
