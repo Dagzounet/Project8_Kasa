@@ -14,3 +14,37 @@
         font-size: 48px;
     }
 }
+
+@media (max-width: 825px) { 
+    .banner {
+        height: 111px;
+        img {
+            height: 111px;
+        }
+        p {
+            font-size: 24px;
+            bottom: 98px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 580px) { 
+    .banner {
+        p {
+            font-size: 24px;
+            text-align: start;
+            padding-left: 17px;
+            width: calc(89.33% - 2px);
+        }
+    }
+}
+
+@media (max-width: 426px) { 
+    .banner {
+        p {
+            bottom: 116px;
+
+        }
+    }
+}

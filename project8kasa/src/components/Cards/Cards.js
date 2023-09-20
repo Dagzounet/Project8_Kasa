@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import FetchData from "../FetchData/FetchData";
+import { FetchData } from "../../pages/Home/Home";
 
-function Card() {
+function Cards() {
   const [logements, setLogements] = useState([]); // useState pour pouvoir stocker les données des logements
 
   const handleDataFetched = (data) => {
@@ -24,4 +24,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default Cards;
