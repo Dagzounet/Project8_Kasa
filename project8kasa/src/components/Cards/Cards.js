@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FetchData } from "../../pages/Home/Home";
 
 function Cards() {
@@ -15,10 +16,12 @@ function Cards() {
       {/* Appel du composant pour le fetch des données 
           puis boucle map avec les données des logements pour les afficher*/}
       {logements.map((logement, index) => (
-        <figure key={index}>
-          <img src={logement.cover} alt={logement.title} />
-          <figcaption>{logement.title}</figcaption>
-        </figure>
+        <Link key={index} to={`/housing/${logement.id}`}>
+          <figure key={index}>
+            <img src={logement.cover} alt={logement.title} />
+            <figcaption>{logement.title}</figcaption>
+          </figure>
+        </Link>
       ))}
     </div>
   );
