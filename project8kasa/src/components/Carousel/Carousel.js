@@ -23,21 +23,19 @@ function Carousel({ images }) {
         src={images[currentIndex]}
         alt={`Image ${currentSlideNumber}`}
       />
-      <div className="carousel-controls">
-        {slideCount > 1 && (
-          <div>
-            <button onClick={prevImage} className="carousel-button">
-              &#8249;
-            </button>
-            <span className="slide-number">
-              {currentSlideNumber}/{slideCount}
-            </span>
-            <button onClick={nextImage} className="carousel-button">
-              &#8250;
-            </button>
-          </div>
-        )}
-      </div>
+      {slideCount > 1 && (
+        <div className="carousel-controls">
+          <button onClick={prevImage} className="arrow-left">
+            {"<"}
+          </button>
+          <span className="slide-number">
+            {currentSlideNumber}/{slideCount}
+          </span>
+          <button onClick={nextImage} className="arrow-right">
+            {">"}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

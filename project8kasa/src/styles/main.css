@@ -185,6 +185,53 @@ header a:hover {
     margin-top: 8px;
   }
 }
+.carousel-container {
+  height: 415px;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  height: 415px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.arrow-right {
+  position: absolute;
+  transform: translateY(-150%);
+  right: 20px;
+  color: white;
+  border: none;
+  background: none;
+  font-size: 144px;
+}
+
+.arrow-left {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 20px;
+  color: white;
+  border: none;
+  background: none;
+  font-size: 144px;
+}
+
+.slide-number {
+  position: relative;
+  bottom: 10px;
+  color: white;
+}
+
 .notfound {
   text-align: center;
   color: #FF6060;

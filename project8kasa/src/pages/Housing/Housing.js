@@ -31,15 +31,16 @@ function Housing() {
   }
 
   return (
-    <div>
-      <div className="Carousel">
-        {logement.pictures.length > 1 && (
-          <Carousel images={logement.pictures} />
-        )}
-        {logement.pictures.length === 1 && (
-          <img src={logement.pictures[0]} alt="Image" />
-        )}
-      </div>
+    <div className="Housing">
+      {logement.pictures.length > 1 && <Carousel images={logement.pictures} />}
+      {logement.pictures.length === 1 && (
+        <img
+          className="carousel-image"
+          src={logement.pictures[0]}
+          alt="Image"
+        />
+      )}
+
       <h2>{logement.title}</h2>
       <p>{logement.location}</p>
       <p>{logement.tags}</p>
