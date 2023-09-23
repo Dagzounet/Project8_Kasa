@@ -22,9 +22,19 @@
     .HostRating {
         position: relative;
         display: flex;
+        margin-top: 25px;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        width: 240px;
+        align-items: flex-start;
         p {
-            color: $maincolor;
-            width: 50%;
+            color: #FF6060;
+            width: 48%;
+            font-size: 18px;
+            text-align: right;
+            margin-right: 13px;
         }
         img {
         width: 64px;

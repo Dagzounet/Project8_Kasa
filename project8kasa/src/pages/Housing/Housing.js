@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel";
 import TagList from "../../components/TagList/TagList";
+import StarRating from "../../components/StarRating/StarRating";
 
 function Housing() {
   const { id } = useParams();
@@ -50,7 +51,7 @@ function Housing() {
         <div className="HostRating">
           <p>{logement.host.name}</p>
           <img src={logement.host.picture} alt="photo du propriétaire" />
-          {logement.rating}
+          <StarRating rating={logement.rating} />
         </div>
       </article>
       <div>
