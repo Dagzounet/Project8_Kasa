@@ -1,0 +1,10 @@
+.tags-container {
+  display: flex;
+}
+.tags-container .tag {
+  background-color: #FF6060;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 25px;
+  color: white;
+}/*# sourceMappingURL=TagList.css.map */

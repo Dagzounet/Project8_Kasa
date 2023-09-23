@@ -1,0 +1,12 @@
+@import "../../styles/Variables";
+
+.tags-container {
+    display: flex;
+    .tag {
+        background-color: $maincolor;
+        padding: 5px 10px;
+        margin-right: 5px;
+        border-radius: 25px;
+        color: white;
+    }
+}

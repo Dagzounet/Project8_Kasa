@@ -185,6 +185,37 @@ header a:hover {
     margin-top: 8px;
   }
 }
+.Housing h1 {
+  color: #FF6060;
+  font-size: 36px;
+}
+.Housing h2 {
+  color: #FF6060;
+  font-size: 18px;
+}
+.Housing p {
+  font-size: 14px;
+}
+.Housing .location-text-container {
+  display: flex;
+}
+.Housing .TitleLocation {
+  width: 100%;
+}
+.Housing .HostRating {
+  position: relative;
+  display: flex;
+}
+.Housing .HostRating p {
+  color: #FF6060;
+  width: 50%;
+}
+.Housing .HostRating img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+
 .carousel-container {
   height: 415px;
   width: 100%;
@@ -229,6 +260,17 @@ header a:hover {
 .slide-number {
   position: relative;
   bottom: 10px;
+  color: white;
+}
+
+.tags-container {
+  display: flex;
+}
+.tags-container .tag {
+  background-color: #FF6060;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 25px;
   color: white;
 }
 

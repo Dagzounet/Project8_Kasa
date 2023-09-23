@@ -1,46 +1,35 @@
-.carousel-container {
-    height: 415px;
-    width: 100%;
-    position: relative;
-}
+@import "../../styles/Variables";
 
-.carousel-image {
-    height: 415px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.carousel-controls {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.arrow-right {
-    position: absolute;
-    transform: translateY(-150%);
-    right: 20px;
-    color: white;
-    border: none;
-    background: none;
-    font-size: 144px;
-}
-
-.arrow-left {
-    position: absolute;
-    transform: translateY(-150%);
-    left: 20px;
-    color: white;
-    border: none;
-    background: none;
-    font-size: 144px;
+.Housing {
+    h1 {
+        color: $maincolor;
+        font-size: 36px;
+    }
+    h2 {
+        color: $maincolor;
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .location-text-container {
+        display: flex;
+    }
+    .TitleLocation {
+        width: 100%;
     }
 
-.slide-number {
-    position: relative;
-    bottom: 10px;
-    color: white;
+    .HostRating {
+        position: relative;
+        display: flex;
+        p {
+            color: $maincolor;
+            width: 50%;
+        }
+        img {
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+        }
+    }
 }

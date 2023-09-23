@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel";
+import TagList from "../../components/TagList/TagList";
 
 function Housing() {
   const { id } = useParams();
@@ -40,15 +41,18 @@ function Housing() {
           alt="Image"
         />
       )}
-
-      <h2>{logement.title}</h2>
-      <p>{logement.location}</p>
-      <p>{logement.tags}</p>
-      <p>
-        <img src={logement.host.picture} alt="photo du propriétaire" />
-        {logement.host.name}
-        {logement.rating}
-      </p>
+      <article className="location-text-container">
+        <div className="TitleLocation">
+          <h1>{logement.title}</h1>
+          <h2>{logement.location}</h2>
+          <TagList tags={logement.tags} />
+        </div>
+        <div className="HostRating">
+          <p>{logement.host.name}</p>
+          <img src={logement.host.picture} alt="photo du propriétaire" />
+          {logement.rating}
+        </div>
+      </article>
       <div>
         <h2>Description</h2>
         <p>{logement.description}</p>
