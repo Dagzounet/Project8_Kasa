@@ -1,9 +1,11 @@
 .star-rating {
-  width: 135px;
+  width: 175px;
 }
 .star-rating .star-red {
   color: #FF6060;
+  padding-left: 8px;
 }
 .star-rating .star-gray {
   color: #E3E3E3;
+  padding-left: 8px;
 }/*# sourceMappingURL=StarRating.css.map */

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel";
 import TagList from "../../components/TagList/TagList";
 import StarRating from "../../components/StarRating/StarRating";
+import Collapse from "../../components/Collapse/Collapse";
 
 function Housing() {
   const { id } = useParams();
@@ -54,13 +55,9 @@ function Housing() {
           <StarRating rating={logement.rating} />
         </div>
       </article>
-      <div>
-        <h2>Description</h2>
-        <p>{logement.description}</p>
-      </div>
-      <div>
-        <h2>Equipements</h2>
-        <p>{logement.description}</p>
+      <div className="Collapse">
+        <Collapse title="Description" content={logement.description} />
+        <Collapse title="Equipements" content={logement.equipments} />
       </div>
     </div>
   );

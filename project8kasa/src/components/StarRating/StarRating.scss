@@ -1,13 +1,15 @@
 @import "../../styles/Variables";
 
 .star-rating {
-    width: 135px;
+    width: 175px;
     
     .star-red {
         color: $maincolor;
+        padding-left: 8px;
     }
 
     .star-gray {
         color: #E3E3E3;
+        padding-left: 8px;
     }
 }

@@ -215,7 +215,7 @@ header a:hover {
 }
 .Housing .HostRating p {
   color: #FF6060;
-  width: 48%;
+  width: 44%;
   font-size: 18px;
   text-align: right;
   margin-right: 13px;
@@ -278,20 +278,41 @@ header a:hover {
 }
 .tags-container .tag {
   background-color: #FF6060;
-  padding: 5px 10px;
-  margin-right: 5px;
+  padding: 5px 25px;
+  margin-right: 10px;
   border-radius: 25px;
   color: white;
 }
 
 .star-rating {
-  width: 135px;
+  width: 175px;
 }
 .star-rating .star-red {
   color: #FF6060;
+  padding-left: 8px;
 }
 .star-rating .star-gray {
   color: #E3E3E3;
+  padding-left: 8px;
+}
+
+.Housing .Collapse {
+  display: flex;
+  flex-direction: row;
+}
+.Housing .Collapse .collapse-container {
+  flex: 1;
+  margin-right: 10px;
+}
+.Housing .Collapse .collapse-container .collapse-button {
+  display: flex;
+  align-items: center;
+  background-color: #FF6060;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .notfound {
