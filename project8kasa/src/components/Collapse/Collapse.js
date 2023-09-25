@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,10 +12,25 @@ const Collapse = ({ title, content }) => {
   return (
     <div className="collapse-container">
       <button className="collapse-button" onClick={toggleCollapse}>
-        {title}
-        <FontAwesomeIcon icon={faAngleDown} className="icon" />
+        <h2>{title}</h2>
+        <FontAwesomeIcon
+          icon={faAngleUp}
+          className={`icon ${isOpen ? "icon-up" : "icon-down"}`}
+        />
       </button>
-      {isOpen && <div className="collapse-content">{content}</div>}
+      <div
+        className={`collapse-content ${
+          isOpen ? "collapse-animation collapse-open" : "collapse-animation"
+        }`}
+      >
+        <ul>
+          {Array.isArray(content) ? (
+            content.map((item, index) => <li key={index}>{item}</li>)
+          ) : (
+            <p>{content}</p>
+          )}
+        </ul>
+      </div>
     </div>
   );
 };

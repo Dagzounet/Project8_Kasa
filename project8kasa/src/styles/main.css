@@ -198,6 +198,7 @@ header a:hover {
 }
 .Housing .location-text-container {
   display: flex;
+  margin-bottom: 10px;
 }
 .Housing .TitleLocation {
   width: 100%;
@@ -286,6 +287,7 @@ header a:hover {
 
 .star-rating {
   width: 175px;
+  margin-top: 13px;
 }
 .star-rating .star-red {
   color: #FF6060;
@@ -299,6 +301,12 @@ header a:hover {
 .Housing .Collapse {
   display: flex;
   flex-direction: row;
+  gap: 40px;
+}
+.Housing .Collapse h2 {
+  color: white;
+  font-weight: normal;
+  margin: 0;
 }
 .Housing .Collapse .collapse-container {
   flex: 1;
@@ -306,13 +314,56 @@ header a:hover {
 }
 .Housing .Collapse .collapse-container .collapse-button {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: #FF6060;
   color: #fff;
-  padding: 10px;
+  padding: 15px;
   border: none;
   cursor: pointer;
   outline: none;
+  width: 100%;
+  border-radius: 10px;
+}
+.Housing .Collapse .collapse-container .collapse-content {
+  background-color: #F6F6F6;
+  border-radius: 0px 0px 20px 20px;
+  color: #FF6060;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column !important;
+}
+.Housing .Collapse .collapse-container .collapse-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+}
+.Housing .Collapse .collapse-container .collapse-content ul li {
+  padding: 2px 0px;
+}
+.Housing .Collapse .collapse-container .collapse-content p {
+  font-size: 18px;
+  margin: 0;
+  padding: 20px;
+}
+.Housing .Collapse .collapse-container .collapse-animation {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease-in-out;
+}
+.Housing .Collapse .collapse-container .collapse-open {
+  max-height: 1000px;
+  height: auto;
+}
+.Housing .icon {
+  transition: transform 0.7s ease-in-out;
+}
+.Housing .icon-up {
+  transform: rotate(180deg);
+}
+.Housing .icon-down {
+  transform: rotate(0deg);
 }
 
 .notfound {
