@@ -25,9 +25,9 @@ const Collapse = ({ title, content }) => {
       >
         <ul>
           {Array.isArray(content) ? (
-            content.map((item, index) => <li key={index}>{item}</li>)
+            content.map((item, index) => <li key={index}>{item}</li>) //si tableau (array) = affiche par balise "li"
           ) : (
-            <p>{content}</p>
+            <p>{content}</p> //sinon affiche contenu en p
           )}
         </ul>
       </div>

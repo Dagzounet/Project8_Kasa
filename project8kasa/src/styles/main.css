@@ -227,6 +227,40 @@ header a:hover {
   border-radius: 32px;
 }
 
+@media (max-width: 580px) {
+  .Housing .location-text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .Housing h1 {
+    font-size: 18px;
+  }
+  .Housing h2 {
+    font-size: 14px;
+  }
+  .Housing p {
+    font-size: 12px;
+  }
+  .Housing .HostRating {
+    align-content: center;
+    width: auto;
+    align-items: center;
+    margin-top: 0px;
+    position: relative;
+  }
+  .Housing .HostRating p {
+    width: 50px;
+    font-size: 12px;
+    order: 2;
+    margin: 0px;
+    margin-right: 15px;
+  }
+  .Housing .HostRating img {
+    width: 32px;
+    height: 32px;
+    order: 3;
+  }
+}
 .carousel-container {
   height: 415px;
   width: 100%;
@@ -274,6 +308,27 @@ header a:hover {
   color: white;
 }
 
+@media (max-width: 580px) {
+  .carousel-container {
+    height: 225px;
+  }
+  .carousel-image {
+    height: 225px;
+  }
+  .arrow-right {
+    font-size: 44px;
+    right: 10px;
+    transform: translateY(-250%);
+  }
+  .arrow-left {
+    font-size: 44px;
+    left: 10px;
+    transform: translateY(-250%);
+  }
+  .slide-number {
+    display: none;
+  }
+}
 .tags-container {
   display: flex;
 }
@@ -298,6 +353,15 @@ header a:hover {
   padding-left: 8px;
 }
 
+@media (max-width: 580px) {
+  .star-rating {
+    width: 56%;
+    order: 1;
+    font-size: 18px;
+    position: absolute;
+    left: 0px;
+  }
+}
 .Housing .Collapse {
   display: flex;
   flex-direction: row;
@@ -366,6 +430,18 @@ header a:hover {
   transform: rotate(0deg);
 }
 
+@media (max-width: 580px) {
+  .Housing .Collapse {
+    display: flex;
+    flex-direction: column;
+  }
+  .Housing .Collapse .collapse-container .collapse-content p {
+    font-size: 12px;
+  }
+  .Housing .Collapse .collapse-container .collapse-content li {
+    font-size: 12px;
+  }
+}
 .notfound {
   text-align: center;
   color: #FF6060;

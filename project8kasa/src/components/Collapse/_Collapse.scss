@@ -80,3 +80,22 @@
         transform: rotate(0deg);
       }
 }
+
+@media (max-width: 580px) { 
+    .Housing {
+        .Collapse {
+            display: flex;
+            flex-direction: column;
+            .collapse-container {
+                .collapse-content {
+                    p {
+                    font-size: 12px;
+                    }
+                    li {
+                    font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

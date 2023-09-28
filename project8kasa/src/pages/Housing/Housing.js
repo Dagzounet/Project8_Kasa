@@ -30,7 +30,7 @@ function Housing() {
   }, [id]);
 
   if (!logement) {
-    return <div>Loading...</div>;
+    return <div>Chargement...</div>;
   }
 
   return (

@@ -44,3 +44,25 @@
     bottom: 10px;
     color: white;
 }
+
+@media (max-width: 580px) {
+    .carousel-container {
+        height: 225px;
+    }
+    .carousel-image {
+        height: 225px;
+    }
+    .arrow-right {
+        font-size: 44px;
+        right: 10px;
+        transform: translateY(-250%);
+    }
+    .arrow-left {
+        font-size: 44px;
+        left: 10px;
+        transform: translateY(-250%);
+    }
+    .slide-number {
+        display: none;
+    }
+}

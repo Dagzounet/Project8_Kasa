@@ -14,3 +14,13 @@
         padding-left: 8px;
     }
 }
+
+@media (max-width: 580px) { 
+    .star-rating {
+        width: 56%;
+        order: 1;
+        font-size: 18px;
+        position: absolute;
+        left: 0px;
+    }
+}
