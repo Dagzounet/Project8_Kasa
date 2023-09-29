@@ -12,10 +12,11 @@ header {
         padding: 20px;
         color: $maincolor;
         text-decoration: none;
-    &:hover {
-        text-decoration: underline;
     }
-    }
+}
+
+a.underline {
+    text-decoration: underline;
 }
 
 @media (max-width: 580px) { 

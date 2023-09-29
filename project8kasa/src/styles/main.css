@@ -51,7 +51,8 @@ header a {
   color: #FF6060;
   text-decoration: none;
 }
-header a:hover {
+
+a.underline {
   text-decoration: underline;
 }
 

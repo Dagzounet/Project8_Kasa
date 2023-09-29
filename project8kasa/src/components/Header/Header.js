@@ -1,14 +1,24 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import logo from "../../assets/LOGO.png";
 
 function Header() {
+  const location = useLocation();
   return (
     <header>
       <img src={logo} alt="le logo de kasa" />
-      <a href="/" alt="Accueil">
+      <a
+        href="/"
+        alt="Accueil"
+        className={location.pathname === "/" ? "underline" : ""}
+      >
         Accueil
       </a>
-      <a href="/about" alt="A propos">
+      <a
+        href="/about"
+        alt="A propos"
+        className={location.pathname === "/about" ? "underline" : ""}
+      >
         A Propos
       </a>
     </header>
