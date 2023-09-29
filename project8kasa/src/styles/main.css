@@ -6,10 +6,15 @@
 }
 
 .app-container {
-  padding: 0px 20px;
+  padding: 0px 45px;
   flex-grow: 1;
 }
 
+@media (max-width: 640px) {
+  .app-container {
+    padding: 0px 20px;
+  }
+}
 footer {
   color: white;
   background-color: black;
@@ -19,19 +24,17 @@ footer {
 }
 footer img {
   padding: 10px;
+  width: 122px;
 }
 
 @media (max-width: 360px) {
   footer {
     padding-bottom: 20px;
   }
-  footer img {
-    width: 50%;
-  }
   footer p {
     font-size: 12px;
     width: 40%;
-    padding-left: 93px;
+    padding-left: 29%;
   }
 }
 header {
@@ -81,6 +84,7 @@ header a:hover {
   border-radius: 25px;
   filter: brightness(70%);
   height: 223px;
+  object-fit: cover;
 }
 .banner p {
   position: relative;
@@ -182,6 +186,7 @@ header a:hover {
   .gallery a {
     width: calc(100% - 0px);
     margin-left: 0px;
+    margin-right: 0px;
     margin-top: 8px;
   }
 }
@@ -239,11 +244,11 @@ header a:hover {
     font-size: 14px;
   }
   .Housing p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .Housing .HostRating {
     align-content: center;
-    width: auto;
+    width: 98%;
     align-items: center;
     margin-top: 0px;
     position: relative;
@@ -265,12 +270,14 @@ header a:hover {
   height: 415px;
   width: 100%;
   position: relative;
+  border-radius: 10px;
 }
 
 .carousel-image {
   height: 415px;
   width: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .carousel-controls {
@@ -336,7 +343,7 @@ header a:hover {
   background-color: #FF6060;
   padding: 5px 25px;
   margin-right: 10px;
-  border-radius: 25px;
+  border-radius: 10px;
   color: white;
 }
 
@@ -362,21 +369,21 @@ header a:hover {
     left: 0px;
   }
 }
-.Housing .Collapse {
+.Collapse {
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
-.Housing .Collapse h2 {
+.Collapse h2 {
   color: white;
   font-weight: normal;
   margin: 0;
 }
-.Housing .Collapse .collapse-container {
+.Collapse .collapse-container {
   flex: 1;
   margin-right: 10px;
 }
-.Housing .Collapse .collapse-container .collapse-button {
+.Collapse .collapse-container .collapse-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -389,7 +396,7 @@ header a:hover {
   width: 100%;
   border-radius: 10px;
 }
-.Housing .Collapse .collapse-container .collapse-content {
+.Collapse .collapse-container .collapse-content {
   background-color: #F6F6F6;
   border-radius: 0px 0px 20px 20px;
   color: #FF6060;
@@ -397,49 +404,64 @@ header a:hover {
   display: flex;
   flex-direction: column !important;
 }
-.Housing .Collapse .collapse-container .collapse-content ul {
+.Collapse .collapse-container .collapse-content ul {
   list-style: none;
   margin: 0;
   padding: 0;
   padding: 20px;
 }
-.Housing .Collapse .collapse-container .collapse-content ul li {
+.Collapse .collapse-container .collapse-content ul li {
   padding: 2px 0px;
 }
-.Housing .Collapse .collapse-container .collapse-content p {
+.Collapse .collapse-container .collapse-content p {
   font-size: 18px;
   margin: 0;
   padding: 20px;
 }
-.Housing .Collapse .collapse-container .collapse-animation {
+.Collapse .collapse-container .collapse-animation {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.7s ease-in-out;
 }
-.Housing .Collapse .collapse-container .collapse-open {
+.Collapse .collapse-container .collapse-open {
   max-height: 1000px;
   height: auto;
 }
-.Housing .icon {
+
+.icon {
   transition: transform 0.7s ease-in-out;
 }
-.Housing .icon-up {
+
+.icon-up {
   transform: rotate(180deg);
 }
-.Housing .icon-down {
+
+.icon-down {
   transform: rotate(0deg);
 }
 
+.About .Collapse {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
 @media (max-width: 580px) {
-  .Housing .Collapse {
+  .Collapse {
     display: flex;
     flex-direction: column;
   }
-  .Housing .Collapse .collapse-container .collapse-content p {
+  .Collapse .collapse-container h2 {
+    font-size: 13px;
+  }
+  .Collapse .collapse-container .collapse-content p {
     font-size: 12px;
   }
-  .Housing .Collapse .collapse-container .collapse-content li {
+  .Collapse .collapse-container .collapse-content li {
     font-size: 12px;
+  }
+  .About .Collapse {
+    margin: 50px 0px;
   }
 }
 .notfound {

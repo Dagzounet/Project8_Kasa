@@ -1,6 +1,5 @@
 @import "../../styles/Variables";
 
-.Housing {
     .Collapse {
         display: flex;
         flex-direction: row;
@@ -79,23 +78,38 @@
       .icon-down {
         transform: rotate(0deg);
       }
+
+
+.About {
+    .Collapse {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
 }
 
 @media (max-width: 580px) { 
-    .Housing {
-        .Collapse {
-            display: flex;
-            flex-direction: column;
-            .collapse-container {
-                .collapse-content {
-                    p {
-                    font-size: 12px;
-                    }
-                    li {
-                    font-size: 12px;
-                    }
+    .Collapse {
+        display: flex;
+        flex-direction: column;
+        .collapse-container {
+            h2 {
+                font-size: 13px;
+            }
+            .collapse-content {
+                p {
+                font-size: 12px;
+                }
+                li {
+                font-size: 12px;
                 }
             }
+        }
+    }
+
+    .About {
+        .Collapse {
+            margin: 50px 0px;
         }
     }
 }

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Banner from "../../components/Banner/Banner";
 import Cards from "../../components/Cards/Cards";
+import BannerHome from "../../assets/BannerHome.png";
 
 function FetchData({ onDataFetched }) {
   useEffect(() => {
@@ -23,8 +24,8 @@ function FetchData({ onDataFetched }) {
 
 function Home() {
   return (
-    <div className="home">
-      <Banner />
+    <div className="Home">
+      <Banner image={BannerHome} showText={true} />
       <Cards />
     </div>
   );
