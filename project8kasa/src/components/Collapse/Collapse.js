@@ -23,13 +23,15 @@ const Collapse = ({ title, content }) => {
           isOpen ? "collapse-animation collapse-open" : "collapse-animation"
         }`}
       >
-        <ul>
-          {Array.isArray(content) ? (
-            content.map((item, index) => <li key={index}>{item}</li>) //si tableau (array) = affiche par balise "li"
-          ) : (
-            <p>{content}</p> //sinon affiche contenu en p
-          )}
-        </ul>
+        {Array.isArray(content) ? ( //si tableau (array) = affiche balise "ul" et "li"
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{content}</p> //sinon affiche contenu en p
+        )}
       </div>
     </div>
   );
