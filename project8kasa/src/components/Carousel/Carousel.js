@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight as chevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft as chevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,13 +30,13 @@ function Carousel({ images }) {
       {slideCount > 1 && (
         <div className="carousel-controls">
           <button onClick={prevImage} className="arrow-left">
-            {"<"}
+            <FontAwesomeIcon icon={chevronLeft} />
           </button>
           <span className="slide-number">
             {currentSlideNumber}/{slideCount}
           </span>
           <button onClick={nextImage} className="arrow-right">
-            {">"}
+            <FontAwesomeIcon icon={chevronRight} />
           </button>
         </div>
       )}

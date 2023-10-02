@@ -292,22 +292,22 @@ a.underline {
 
 .arrow-right {
   position: absolute;
-  transform: translateY(-150%);
+  transform: translateY(-210%);
   right: 20px;
   color: white;
   border: none;
   background: none;
-  font-size: 144px;
+  font-size: 91px;
 }
 
 .arrow-left {
   position: absolute;
-  transform: translateY(-150%);
+  transform: translateY(-210%);
   left: 20px;
   color: white;
   border: none;
   background: none;
-  font-size: 144px;
+  font-size: 91px;
 }
 
 .slide-number {
@@ -324,14 +324,14 @@ a.underline {
     height: 225px;
   }
   .arrow-right {
-    font-size: 44px;
+    font-size: 32px;
     right: 10px;
-    transform: translateY(-250%);
+    transform: translateY(-320%);
   }
   .arrow-left {
-    font-size: 44px;
+    font-size: 32px;
     left: 10px;
-    transform: translateY(-250%);
+    transform: translateY(-320%);
   }
   .slide-number {
     display: none;

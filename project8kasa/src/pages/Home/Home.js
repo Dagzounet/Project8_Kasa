@@ -19,8 +19,6 @@ function FetchData({ onDataFetched }) {
 
     fetchData();
   }, [onDataFetched]); // Appel de la fonction fetchData lorsque le composant est monté
-
-  return null; // pour indiquer qu'il n'y a pas de rendu immédiat (conventionnel)
 }
 
 function Home() {
