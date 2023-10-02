@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
@@ -35,6 +36,14 @@ const Collapse = ({ title, content }) => {
       </div>
     </div>
   );
+};
+
+Collapse.propTypes = {
+  title: PropTypes.string.isRequired, // title = chaîne de caractères (string)
+  content: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired, // content = soit chaîne de caractères (string), soit tableau de chaînes de caractères (string)
 };
 
 export default Collapse;

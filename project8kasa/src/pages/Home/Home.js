@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import Banner from "../../components/Banner/Banner";
 import Cards from "../../components/Cards/Cards";
 import BannerHome from "../../assets/BannerHome.png";
@@ -30,6 +31,10 @@ function Home() {
     </div>
   );
 }
+
+FetchData.propTypes = {
+  onDataFetched: PropTypes.func.isRequired, // onDataFetched = fonction requise
+};
 
 export default Home;
 export { FetchData };

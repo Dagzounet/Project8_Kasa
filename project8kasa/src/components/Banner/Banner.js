@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Banner({ image, showText }) {
   return (
@@ -8,5 +9,10 @@ function Banner({ image, showText }) {
     </div>
   );
 }
+
+Banner.propTypes = {
+  image: PropTypes.string.isRequired, // image = chaîne de caractères (string) requise
+  showText: PropTypes.bool.isRequired, // showText = booléen (bool) requis
+};
 
 export default Banner;

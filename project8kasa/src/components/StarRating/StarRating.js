@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
@@ -24,5 +25,9 @@ function StarRating({ rating }) {
 
   return <div className="star-rating">{stars}</div>;
 }
+
+StarRating.propTypes = {
+  rating: PropTypes.string.isRequired, // rating = chaine de caractères ici (pas un number)
+};
 
 export default StarRating;

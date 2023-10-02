@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,5 +40,9 @@ function Carousel({ images }) {
     </div>
   );
 }
+
+Carousel.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.string).isRequired, // images = tableau de chaînes de caractères (URLs)
+};
 
 export default Carousel;

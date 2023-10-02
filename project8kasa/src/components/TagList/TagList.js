@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function TagList({ tags }) {
   return (
@@ -11,5 +12,9 @@ function TagList({ tags }) {
     </div>
   );
 }
+
+TagList.propTypes = {
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired, // tags = tableau de chaînes de caractères (strings)
+};
 
 export default TagList;
