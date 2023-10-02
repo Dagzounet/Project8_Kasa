@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel";
 import TagList from "../../components/TagList/TagList";
 import StarRating from "../../components/StarRating/StarRating";
@@ -8,6 +8,7 @@ import Collapse from "../../components/Collapse/Collapse";
 function Housing() {
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
+  const [isValidId, setIsValidId] = useState(true);
 
   useEffect(() => {
     const fetchLogement = async () => {
@@ -19,15 +20,20 @@ function Housing() {
         if (logementData) {
           setLogement(logementData);
         } else {
-          console.error("Logement introuvable");
+          setIsValidId(false);
         }
       } catch (error) {
         console.error("Erreur lors de la récupération du logement :", error);
+        setIsValidId(false);
       }
     };
 
     fetchLogement();
   }, [id]);
+
+  if (!isValidId) {
+    return <Navigate to="/not-found" />;
+  }
 
   if (!logement) {
     return <div>Chargement...</div>;
