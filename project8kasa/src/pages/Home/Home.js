@@ -17,8 +17,8 @@ function FetchData({ onDataFetched }) {
       }
     };
 
-    fetchData();
-  }, [onDataFetched]); // Appel de la fonction fetchData lorsque le composant est monté
+    fetchData(); // Appel de la fonction fetchData lorsque le composant est monté
+  }, []); // Utilisation d'une dépendance vide pour exécuter fetchData uniquement lors du montage
 }
 
 function Home() {
