@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 const Collapse = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // démarre sur false
 
   const toggleCollapse = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen); //inversion de l'état
   };
 
   return (
@@ -16,13 +16,13 @@ const Collapse = ({ title, content }) => {
         <h2>{title}</h2>
         <FontAwesomeIcon
           icon={faAngleUp}
-          className={`icon ${isOpen ? "icon-up" : "icon-down"}`}
+          className={`icon ${isOpen ? "icon-down" : "icon-up"}`} // true down, false up
         />
       </button>
       <div
         className={`collapse-content ${
           isOpen ? "collapse-animation collapse-open" : "collapse-animation"
-        }`}
+        }`} // créer div si ouvert
       >
         {Array.isArray(content) ? ( //si tableau (array) = affiche balise "ul" et "li"
           <ul>
