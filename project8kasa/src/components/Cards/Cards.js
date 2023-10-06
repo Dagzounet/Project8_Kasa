@@ -14,7 +14,8 @@ function Cards() {
     <div className="gallery">
       <FetchData onDataFetched={handleDataFetched} />
       {/* Appel du composant pour le fetch des données 
-          puis boucle map avec les données des logements pour les afficher*/}
+          puis boucle map avec les données des logements pour créer des links url dynamique vers housing
+          avec id et figure pour chacun*/}
       {logements.map((logement, index) => (
         <Link key={index} to={`/housing/${logement.id}`}>
           <figure key={index}>

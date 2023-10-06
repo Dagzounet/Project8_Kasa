@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import logo from "../../assets/LOGO.png";
 
 function Header() {
-  const location = useLocation();
+  const location = useLocation(); //utilisation de ce hooks pour obtenir les info de l'url actuelle
   return (
     <header>
       <img src={logo} alt="le logo de kasa" />

@@ -5,6 +5,7 @@ import Cards from "../../components/Cards/Cards";
 import BannerHome from "../../assets/BannerHome.png";
 
 function FetchData({ onDataFetched }) {
+  // props pour appeler les données après récupération
   useEffect(() => {
     const fetchData = async () => {
       // Fonction asynchrone pour récupérer les données
