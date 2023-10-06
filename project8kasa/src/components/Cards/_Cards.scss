@@ -57,6 +57,9 @@
 
 @media (max-width: 580px) { 
     .gallery {
+        figure {
+            min-height: 210px;
+        }
         a {
             width: calc(93.33% - 54px);
         }
