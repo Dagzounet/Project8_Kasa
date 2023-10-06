@@ -4,11 +4,16 @@ import PropTypes from "prop-types";
 function TagList({ tags }) {
   return (
     <div className="tags-container">
-      {tags.map((tag, index) => (
-        <p key={index} className="tag">
-          {tag}
-        </p>
-      ))}
+      {tags.map(
+        (
+          tag,
+          index // map créer new tableau depuis l'ancien "tags" avec <p> pour chaque tag
+        ) => (
+          <p key={index} className="tag">
+            {tag}
+          </p>
+        )
+      )}
     </div>
   );
 }
